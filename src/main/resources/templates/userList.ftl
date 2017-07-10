@@ -13,7 +13,7 @@
 
 <div class="container">
     <h2>Phone Book</h2>
-    <h3>User Phones:</h3>
+    <h3>Users and their Phones:</h3>
     <table class="table table-striped" data-toggle="validator">
         <thead>
         <tr>
