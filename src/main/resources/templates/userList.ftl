@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Phone Book</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,7 +12,8 @@
 <body>
 
 <div class="container">
-    <h2>User Phones:</h2>
+    <h2>Phone Book</h2>
+    <h3>User Phones:</h3>
     <table class="table table-striped" data-toggle="validator">
         <thead>
         <tr>
@@ -46,6 +47,8 @@
     </table>
 
     <button class="submit-btn" type="button">Submit</button>
+    <p style="margin-top: 20px">To edit phones, change one or more fields, and click "Submit".</p>
+
 </div>
 
 <script>

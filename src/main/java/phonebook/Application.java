@@ -34,11 +34,16 @@ public class Application {
     @Bean
     public CommandLineRunner commandLineRunner(UserRepository userRepository, PhoneBookService phoneBookService) {
         return args -> {
-            userRepository.save(new User("Ivanov Ivan Ivanovich", new Phone("+38 (050) 111-11-11")));
+            userRepository.save(new User("Ivanov Ivan Ivanovich",
+                    new Phone("+38 (050) 111-11-11", PhoneType.MOBILE, "Comment")));
             userRepository.save(new User("Petrov Petr Petrovich",
-                    new Phone("+38 (050) 222-22-22", PhoneType.MOBILE, "Some comment")));
+                    new Phone("+38 (067) 222-22-22", PhoneType.MOBILE, "Some comment")));
             userRepository.save(new User("Sanov San Sanych",
-                    new Phone("+38 (050) 333-33-33", PhoneType.HOME, "My comment")));
+                    new Phone("+38 (063) 333-33-33", PhoneType.MOBILE, "My comment")));
+            userRepository.save(new User("Petrova Anna Petrovna",
+                    new Phone("+38 (066) 444-44-44", PhoneType.UNKNOWN, "No comment")));
+            userRepository.save(new User("Ivanov Lola Ivanovna",
+                    new Phone("+38 (044) 555-55-55", PhoneType.HOME, "Another comment")));
 
 //            Collection<User> users = userRepository.findAll();
 //            users.forEach(System.out::println);
