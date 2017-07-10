@@ -28,7 +28,7 @@
         <tr>
             <td data-name="phoneId" hidden>${user.phone.id}</td>
             <td data-name="changed" hidden>false</td>
-            <td data-name="userName">${user.name}</td>
+            <td data-name="userName" onmousedown="return false" onselectstart="return false">${user.name}</td>
             <td data-name="phoneNumber">${user.phone.phoneNumber}</td>
             <td data-name="phoneType">
                 <select style="width: 100%">
